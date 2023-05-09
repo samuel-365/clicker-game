@@ -54,7 +54,7 @@ body{
 #cookieImg{
     width: 200px;
     height: 200px;
-    background-image: url(/assets/img/cookie.png.png);
+    background-image: url(./assets/img/cookie.png);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
