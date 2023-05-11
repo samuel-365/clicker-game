@@ -92,7 +92,7 @@ setInterval(refreshBtn, 100);
 //---------------------------------------------------------------- FUNCTIONS
 function refreshCookies() {
     cookieValue.innerHTML = totalCookies.toFixed(1);
-    cookiesPerSecond.innerHTML = cookieMultiplier.toFixed(1);
+    cookiesPerSecond.innerHTML = cookieMultiplier.toFixed(0);
     mouseUpgradeDisplay.innerHTML = mouseUpgradePrice; 
     fasterMultiplierDisplay.innerHTML = fasterMultiplierPrice;
     mouseMultiplierDisplay.innerHTML = mouseMultiplierUpgradePrice;

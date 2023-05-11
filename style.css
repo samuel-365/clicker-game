@@ -20,34 +20,34 @@ body{
 }
 
 #achievementsContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    text-align: center;
     padding-left: 10px;
-    width: 80%;
-    height: 10%;
+    padding-right: 10px;
+    width: 80vw;
+    height: 100%;
     background-color: black;
 }
 #achievementsContainer h2{
-    margin: 0;
-    padding: 0;
     color: white;
+    font-size: clamp(1vw, 1vw, 16px);
 }
 
 .achievements{
-    display: flex;
-    width: 100%;
-    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
 }
 
 .achievementStyle{
-    margin-left: 10px;
-    margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    display: grid;
+    grid-row: 1;
+    grid-column: span 1;
+    place-items: center;
+    text-align: center;
     background-color: gold;
+    font-size: clamp(1vw, 1vw, 16px);
 }
 
 .grayConquest{
@@ -82,6 +82,7 @@ body{
     background-image: url(./assets/img/bakery-bg.jpg);
     background-size: cover;
     margin: 40px;
+    margin-top: 10px;
     padding: 10px;
 }
 
@@ -100,8 +101,10 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+    font-size: clamp(1vw, 2vw, 14px);
+    text-align: center;
 }
 
 #cookiesPerSecond{
@@ -109,28 +112,26 @@ body{
 }
 
 #cookieImg{
-    width: 200px;
-    height: 200px;
-    background-image: url(./assets/img/cookie.png);
+    width: 15vw;
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
     transition: all 0.1s;
 }
 #cookieImg:hover{
-    width: 210px;
-    height: 210px;
+    width: 13vw;
+}
+#cookieImg img{
+    width: 100%;
+    height: 100%;
 }
 
 .clickAnim{
-    width: 190px !important;
-    height: 190px !important;
+    width: 10vw !important;
 }
 
 #rightSide{
     width: 50%;
-    display: flex;
-    flex-direction: column;
     padding-left: 20px;
     padding-top: 20px;
 }
@@ -138,9 +139,10 @@ body{
 #rightSide button{
     cursor: pointer;
     margin-bottom: 10px;
-    width: 10vw;
+    width: 15vw;
     height: 15vh;
-    font-size: 1vw;
+    font-size: clamp(1vw, 2vw, 14px);
+    text-align: center;
     padding: 10px;
 }
 
@@ -150,6 +152,12 @@ body{
 
 #rightSide span{
     font-weight: 900;
+}
+
+#store{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(10, 1fr);
 }
 
 .disabledButton{
